@@ -88,11 +88,15 @@ Aplikasi web sederhana untuk membantu mahasiswa mengelola tugas-tugas kuliah den
 - Daftar tugas dengan badge
 - Tombol aksi (Check, Edit, Delete)
 
+![alt text](https://github.com/muhammad-nurikhsan/Praktikum-Pengembangan-Aplikasi-Web/blob/main/Praktikum%20Pertemuan%201/Screenshot/Dashboard.png?raw=true)
+
 ### 2. Form Tambah/Edit
 - Modal form dengan 3 input
 - Dropdown mata kuliah
 - Date picker
 - Tombol Simpan dan Batal
+
+![alt text](https://github.com/muhammad-nurikhsan/Praktikum-Pengembangan-Aplikasi-Web/blob/main/Praktikum%20Pertemuan%201/Screenshot/FilterTugas.png?raw=true)
 
 ### 3. Filter dan Status
 - Tugas selesai (background hijau)
@@ -100,14 +104,7 @@ Aplikasi web sederhana untuk membantu mahasiswa mengelola tugas-tugas kuliah den
 - Hasil pencarian
 - Filter aktif
 
----
-
-## Teknologi yang Digunakan
-
-- **HTML5** - Struktur aplikasi
-- **CSS3** - Styling (Grid, Flexbox, Responsive)
-- **JavaScript ES6** - Logika dan interaktivitas
-- **localStorage API** - Penyimpanan data
+![alt text](https://github.com/muhammad-nurikhsan/Praktikum-Pengembangan-Aplikasi-Web/blob/main/Praktikum%20Pertemuan%201/Screenshot/Form.png?raw=true)
 
 ---
 
@@ -225,5 +222,6 @@ function deadlineDekat(stringTanggal) {
 
 ---
 
-**Dibuat untuk memenuhi Tugas Praktikum Pemrograman Aplikasi Web**  
+**Praktikum Pemrograman Aplikasi Web**  
 Institut Teknologi Sumatera
+
