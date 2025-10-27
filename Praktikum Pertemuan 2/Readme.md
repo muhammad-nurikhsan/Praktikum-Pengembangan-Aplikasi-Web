@@ -96,12 +96,15 @@ Tidak perlu instalasi atau setup server.
 
 ### Dashboard
 Menampilkan statistik dan ringkasan hari ini
+![alt text](https://github.com/muhammad-nurikhsan/Praktikum-Pengembangan-Aplikasi-Web/blob/main/Praktikum%20Pertemuan%202/screenshot/Dashboard.png)
 
 ### Jadwal Kuliah
 Table jadwal dengan filter per hari
+![alt text](https://github.com/muhammad-nurikhsan/Praktikum-Pengembangan-Aplikasi-Web/blob/main/Praktikum%20Pertemuan%202/screenshot/JadwalKuliah.png)
 
 ### To-Do List
 List dengan search dan filter status
+![alt text](https://github.com/muhammad-nurikhsan/Praktikum-Pengembangan-Aplikasi-Web/blob/main/Praktikum%20Pertemuan%202/screenshot/ToDoList.png)
 
 ---
 
@@ -119,3 +122,4 @@ Free to use untuk keperluan belajar.
 
 Dibuat untuk tugas Praktikum JavaScript Next Gen  
 Institut Teknologi Sumatera - 2025
+
