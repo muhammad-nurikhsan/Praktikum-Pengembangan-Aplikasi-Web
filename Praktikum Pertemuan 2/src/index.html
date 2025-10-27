@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Mahasiswa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="profile">
+            <h3>Komengs Personal Dashboard</h3>
+        </div>
+        <nav>
+            <a href="#" class="nav-link active" onclick="showPage('home')">Beranda</a>
+            <a href="#" class="nav-link" onclick="showPage('jadwal')">Jadwal Kuliah</a>
+            <a href="#" class="nav-link" onclick="showPage('todo')">To Do List</a>
+        </nav>
+    </div>
+
+    <div class="main">
+        <div class="header">
+            <h1 id="pageTitle">Dashboard</h1>
+                <div id="nim"> Muhammad Nurikhsan - 123140057</div>
+            <div class="time">
+                <div id="clock">00:00:00</div>
+                <div id="date">-</div>
+            </div>
+        </div>
+
+        <!-- Home -->
+        <div id="home" class="page active">
+            <div class="stats">
+                <div class="stat-card">
+                    <h2 id="totalTodo">0</h2>
+                    <p>Total To Do List</p>
+                </div>
+                <div class="stat-card">
+                    <h2 id="doneTodo">0</h2>
+                    <p>Selesai</p>
+                </div>
+                <div class="stat-card">
+                    <h2 id="todaySchedule">0</h2>
+                    <p>Jadwal Hari Ini</p>
+                </div>
+            </div>
+
+            <div class="summary">
+                <div class="box">
+                    <h3>To Do List Hari Ini</h3>
+                    <div id="todayTodo"></div>
+                </div>
+                <div class="box">
+                    <h3>Jadwal Hari Ini</h3>
+                    <div id="nextSchedule"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Jadwal -->
+        <div id="jadwal" class="page">
+            <div class="form-card">
+                <input type="text" id="courseName" placeholder="Mata Kuliah">
+                <select id="day">
+                    <option>Senin</option>
+                    <option>Selasa</option>
+                    <option>Rabu</option>
+                    <option>Kamis</option>
+                    <option>Jumat</option>
+                </select>
+                <input type="time" id="startTime">
+                <input type="time" id="endTime">
+                <input type="text" id="room" placeholder="Ruangan">
+                <button onclick="addSchedule()">Tambah Jadwal</button>
+            </div>
+
+            <div class="days">
+                <button class="day-btn active" onclick="filterDay('all')">Semua</button>
+                <button class="day-btn" onclick="filterDay('Senin')">Senin</button>
+                <button class="day-btn" onclick="filterDay('Selasa')">Selasa</button>
+                <button class="day-btn" onclick="filterDay('Rabu')">Rabu</button>
+                <button class="day-btn" onclick="filterDay('Kamis')">Kamis</button>
+                <button class="day-btn" onclick="filterDay('Jumat')">Jumat</button>
+            </div>
+
+            <table id="scheduleTable">
+                <thead>
+                    <tr>
+                        <th>Hari</th>
+                        <th>Mata Kuliah</th>
+                        <th>Waktu</th>
+                        <th>Ruangan</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody id="scheduleBody"></tbody>
+            </table>
+        </div>
+
+        <!-- To Do -->
+        <div id="todo" class="page">
+            <div class="form-card">
+                <input type="text" id="todoName" placeholder="Apa yang harus dilakukan?">
+                <input type="date" id="todoDate">
+                <select id="todoCategory">
+                    <option>Kuliah</option>
+                    <option>Organisasi</option>
+                    <option>Pribadi</option>
+                </select>
+                <button onclick="addTodo()">Tambah</button>
+            </div>
+
+            <input type="text" id="searchTodo" placeholder="Cari..." onkeyup="renderTodo()">
+
+            <div class="filter-buttons">
+                <button class="filter-btn active" onclick="filterTodo('all')">Semua</button>
+                <button class="filter-btn" onclick="filterTodo('active')">Belum Selesai</button>
+                <button class="filter-btn" onclick="filterTodo('done')">Selesai</button>
+            </div>
+
+            <div id="todoList"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
