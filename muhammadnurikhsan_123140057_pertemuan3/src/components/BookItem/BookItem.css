@@ -1,0 +1,74 @@
+.book-item {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.06);
+  transition: transform 0.2s;
+}
+
+.book-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 25px rgba(0,0,0,0.1);
+}
+
+.book-content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.book-info h3 {
+  font-size: 1.2rem;
+  color: #2c3e50;
+  margin-bottom: 0.4rem;
+}
+
+.author {
+  color: #7f8c8d;
+  font-size: 0.9rem;
+}
+
+.book-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.btn-edit,
+.btn-delete {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.btn-edit {
+  background: #e3f2fd;
+}
+
+.btn-delete {
+  background: #ffebee;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.status-green {
+  background: #d4edda;
+  color: #155724;
+}
+
+.status-blue {
+  background: #cce5ff;
+  color: #004085;
+}
+
+.status-orange {
+  background: #fff3cd;
+  color: #856404;
+}

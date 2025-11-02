@@ -1,0 +1,20 @@
+.book-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.2rem;
+}
+
+.empty-state {
+  background: white;
+  padding: 3rem;
+  border-radius: 12px;
+  text-align: center;
+  color: #95a5a6;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+}
+
+@media (max-width: 768px) {
+  .book-list {
+    grid-template-columns: 1fr;
+  }
+}

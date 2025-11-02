@@ -1,0 +1,45 @@
+.book-filter {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+  margin-bottom: 2rem;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border: 2px solid #e0e6ed;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.search-box input:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.filter-btn {
+  padding: 0.6rem 1.2rem;
+  background: #ecf0f1;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.filter-btn:hover {
+  background: #d5dbdb;
+}
+
+.filter-btn.active {
+  background: #667eea;
+  color: white;
+}
