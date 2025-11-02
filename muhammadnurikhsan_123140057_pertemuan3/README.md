@@ -1,70 +1,163 @@
-# Getting Started with Create React App
+# Aplikasi Manajemen Buku
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Aplikasi web untuk mengelola koleksi buku pribadi dengan fitur pencarian, filter, dan statistik.
 
-## Available Scripts
+## Data Mahasiswa
 
-In the project directory, you can run:
+- **Nama**: Muhammad Nurikhsan
+- **NIM**: 123140057
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Deskripsi
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Aplikasi untuk mencatat dan mengelola koleksi buku pribadi. Pengguna dapat menambahkan buku yang sudah dimiliki, sedang dibaca, atau masuk wishlist. Data tersimpan di localStorage sehingga tidak hilang saat browser ditutup.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Fitur Utama
 
-### `npm run build`
+### 1. Manajemen Buku
+- Tambah buku baru (judul, penulis, status)
+- Edit buku yang sudah ada
+- Hapus buku dengan konfirmasi
+- Validasi input form
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 2. Pencarian & Filter
+- Search real-time berdasarkan judul/penulis
+- Filter berdasarkan status:
+  - Semua
+  - Sudah Dimiliki
+  - Sedang Dibaca
+  - Wishlist
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 3. Statistik
+- Total buku keseluruhan
+- Jumlah per kategori status
+- Daftar 10 buku terbaru
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## Teknologi
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- React 18
+- React Router DOM
+- Context API untuk state management
+- localStorage untuk penyimpanan data
+- CSS3 dengan dark mode theme
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Konsep React yang Diimplementasikan
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 1. Hooks
+```javascript
+const [books, setBooks] = useState([]);
+useEffect(() => { /* load from localStorage */ }, []);
+const stats = useMemo(() => { /* calculate stats */ }, [books]);
+```
 
-## Learn More
+### 2. Context API
+```javascript
+const BookContext = createContext();
+export function BookProvider({ children }) { }
+export function useBooks() { }
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 3. Custom Hooks
+```javascript
+function useLocalStorage(key, initialValue) { }
+function useBookStats(books) { }
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 4. React Router
+```javascript
+<Routes>
+  <Route path="/" element={<Home />} />
+  <Route path="/stats" element={<Stats />} />
+</Routes>
+```
 
-### Code Splitting
+### 5. Component Composition
+```javascript
+<BookForm bookToEdit={editingBook} onCancel={handleCancel} />
+<BookList onEdit={handleEdit} />
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## Struktur Folder
+```
+src/
+├── components/
+│   ├── Header/
+│   ├── Navbar/
+│   ├── BookForm/
+│   ├── BookFilter/
+│   ├── BookList/
+│   └── BookItem/
+├── pages/
+│   ├── Home/
+│   └── Stats/
+├── hooks/
+│   ├── useLocalStorage.js
+│   └── useBookStats.js
+├── context/
+│   └── BookContext.jsx
+├── App.jsx
+└── index.js
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## Cara Menjalankan
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+1. Clone repository
+```bash
+git clone https://github.com/muhammad-nurikhsan/Praktikum-Pengembangan-Aplikasi-Web.git
+cd Praktikum-Pengembangan-Aplikasi-Web/muhammadnurikhsan_123140057_pertemuan3
+```
 
-### Advanced Configuration
+2. Install dependencies
+```bash
+npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+3. Jalankan aplikasi
+```bash
+npm start
+```
 
-### Deployment
+4. Buka browser di `http://localhost:3000`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## Screenshot
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Halaman Beranda
+Tampilan utama dengan daftar buku dan fitur search/filter
+
+![Beranda](https://github.com/muhammad-nurikhsan/Praktikum-Pengembangan-Aplikasi-Web/blob/main/muhammadnurikhsan_123140057_pertemuan3/screenshot/home.png)
+
+### Form Tambah/Edit Buku
+Form untuk menambah atau mengubah data buku
+
+![Form](https://github.com/muhammad-nurikhsan/Praktikum-Pengembangan-Aplikasi-Web/blob/main/muhammadnurikhsan_123140057_pertemuan3/screenshot/form.png)
+
+### Halaman Statistik
+Statistik koleksi buku dan daftar buku terbaru
+
+![Statistik](https://github.com/muhammad-nurikhsan/Praktikum-Pengembangan-Aplikasi-Web/blob/main/muhammadnurikhsan_123140057_pertemuan3/screenshot/stats.png)
+
+---
+
+## Catatan
+
+- Data disimpan di localStorage 
+- Aplikasi responsive untuk mobile dan desktop
+- Dark mode karena preferensi pribadi
+
+---
+
+Praktikum Pemrograman Aplikasi Web  
+Institut Teknologi Sumatera
