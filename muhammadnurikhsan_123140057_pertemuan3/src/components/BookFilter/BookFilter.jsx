@@ -19,7 +19,7 @@ function BookFilter() {
           type="text"
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
-          placeholder="🔍 Cari judul atau penulis..."
+          placeholder="Cari judul atau penulis..."
         />
       </div>
       <div className="filter-buttons">

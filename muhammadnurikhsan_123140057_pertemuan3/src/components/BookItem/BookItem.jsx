@@ -8,13 +8,13 @@ function BookItem({ book, onEdit }) {
   const getStatusInfo = (status) => {
     switch(status) {
       case 'milik':
-        return { color: 'green', label: 'Dimiliki', emoji: '✅' };
+        return { color: 'green', label: 'Dimiliki' };
       case 'baca':
-        return { color: 'blue', label: 'Dibaca', emoji: '📖' };
+        return { color: 'blue', label: 'Dibaca' };
       case 'beli':
-        return { color: 'orange', label: 'Beli', emoji: '🛒' };
+        return { color: 'purple', label: 'Wishlist' };
       default:
-        return { color: 'gray', label: status, emoji: '📚' };
+        return { color: 'gray', label: status };
     }
   };
 
@@ -28,12 +28,16 @@ function BookItem({ book, onEdit }) {
           <p className="author">oleh {book.penulis}</p>
         </div>
         <div className="book-actions">
-          <button onClick={() => onEdit(book)} className="btn-edit">✏️</button>
-          <button onClick={() => deleteBook(book.id)} className="btn-delete">🗑️</button>
+          <button onClick={() => onEdit(book)} className="btn-edit" title="Edit">
+            Edit
+          </button>
+          <button onClick={() => deleteBook(book.id)} className="btn-delete" title="Hapus">
+            Hapus
+          </button>
         </div>
       </div>
       <div className={`status-badge status-${statusInfo.color}`}>
-        {statusInfo.emoji} {statusInfo.label}
+        {statusInfo.label}
       </div>
     </div>
   );

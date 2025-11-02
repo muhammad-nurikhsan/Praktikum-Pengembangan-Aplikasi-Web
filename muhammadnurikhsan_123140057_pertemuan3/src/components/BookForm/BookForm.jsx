@@ -54,6 +54,7 @@ function BookForm({ bookToEdit, onCancel }) {
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
+    // clear error saat user mulai ngetik
     if (errors[name]) {
       setErrors(prev => ({ ...prev, [name]: '' }));
     }
