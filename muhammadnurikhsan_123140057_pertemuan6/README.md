@@ -117,7 +117,7 @@ GET /api/matakuliah
   ]
 }
 ```
-![GET ALL](https://github.com/muhammad-nurikhsan/Praktikum-Pengembangan-Aplikasi-Web/blob/main/muhammadnurikhsan_123140057_pertemuan6/screenshot/getAll.png)
+![GET ALL](https://github.com/muhammad-nurikhsan/Praktikum-Pengembangan-Aplikasi-Web/blob/main/muhammadnurikhsan_123140057_pertemuan6/screenshot/getAll.jpg)
 
 ---
 
@@ -136,7 +136,7 @@ GET /api/matakuliah/1
   "semester": 5
 }
 ```
-![GET by ID](https://github.com/muhammad-nurikhsan/Praktikum-Pengembangan-Aplikasi-Web/blob/main/muhammadnurikhsan_123140057_pertemuan6/screenshot/getID.png)
+![GET by ID](https://github.com/muhammad-nurikhsan/Praktikum-Pengembangan-Aplikasi-Web/blob/main/muhammadnurikhsan_123140057_pertemuan6/screenshot/getID.jpg)
 
 ---
 
@@ -159,7 +159,7 @@ Content-Type: application/json
   "matakuliah": { ... }
 }
 ```
-![POST Create matakuliah](https://github.com/muhammad-nurikhsan/Praktikum-Pengembangan-Aplikasi-Web/blob/main/muhammadnurikhsan_123140057_pertemuan6/screenshot/postCreate.png)
+![POST Create matakuliah](https://github.com/muhammad-nurikhsan/Praktikum-Pengembangan-Aplikasi-Web/blob/main/muhammadnurikhsan_123140057_pertemuan6/screenshot/postCreate.jpg)
 
 ---
 
@@ -181,7 +181,7 @@ Content-Type: application/json
   "matakuliah": { ... }
 }
 ```
-![PUT Update matakuliah](https://github.com/muhammad-nurikhsan/Praktikum-Pengembangan-Aplikasi-Web/blob/main/muhammadnurikhsan_123140057_pertemuan6/screenshot/putUpdate.png)
+![PUT Update matakuliah](https://github.com/muhammad-nurikhsan/Praktikum-Pengembangan-Aplikasi-Web/blob/main/muhammadnurikhsan_123140057_pertemuan6/screenshot/putUpdate.jpg)
 
 ---
 
@@ -196,7 +196,7 @@ DELETE /api/matakuliah/4
   "message": "Matakuliah deleted successfully"
 }
 ```
-![DELETE](https://github.com/muhammad-nurikhsan/Praktikum-Pengembangan-Aplikasi-Web/blob/main/muhammadnurikhsan_123140057_pertemuan6/screenshot/delete.png)
+![DELETE](https://github.com/muhammad-nurikhsan/Praktikum-Pengembangan-Aplikasi-Web/blob/main/muhammadnurikhsan_123140057_pertemuan6/screenshot/delete.jpg)
 
 ---
 ## Dokumentasi lainnya
@@ -207,18 +207,18 @@ Keseluruhan Dokumentasi meliputi :
 - Data update matakuliah
 - Data setelah delete
 ```
-![Data Awal](https://github.com/muhammad-nurikhsan/Praktikum-Pengembangan-Aplikasi-Web/blob/main/muhammadnurikhsan_123140057_pertemuan6/screenshot/tigadata.png)
+![Data Awal](https://github.com/muhammad-nurikhsan/Praktikum-Pengembangan-Aplikasi-Web/blob/main/muhammadnurikhsan_123140057_pertemuan6/screenshot/tigadata.jpg)
 
 ```
 
 ```
-![Data setelah POST Create](https://github.com/muhammad-nurikhsan/Praktikum-Pengembangan-Aplikasi-Web/blob/main/muhammadnurikhsan_123140057_pertemuan6/screenshot/empatdata.png)
+![Data setelah POST Create](https://github.com/muhammad-nurikhsan/Praktikum-Pengembangan-Aplikasi-Web/blob/main/muhammadnurikhsan_123140057_pertemuan6/screenshot/empatdata.jpg)
 ```
 ```
-![Data update matakuliah](https://github.com/muhammad-nurikhsan/Praktikum-Pengembangan-Aplikasi-Web/blob/main/muhammadnurikhsan_123140057_pertemuan6/screenshot/hasilupdate.png)
+![Data update matakuliah](https://github.com/muhammad-nurikhsan/Praktikum-Pengembangan-Aplikasi-Web/blob/main/muhammadnurikhsan_123140057_pertemuan6/screenshot/hasilupdate.jpg)
 ```
 ```
-![Data setelah di hapus](https://github.com/muhammad-nurikhsan/Praktikum-Pengembangan-Aplikasi-Web/blob/main/muhammadnurikhsan_123140057_pertemuan6/screenshot/hasildelete.png)
+![Data setelah di hapus](https://github.com/muhammad-nurikhsan/Praktikum-Pengembangan-Aplikasi-Web/blob/main/muhammadnurikhsan_123140057_pertemuan6/screenshot/hasildelete.jpg)
 ```
 
 ---
