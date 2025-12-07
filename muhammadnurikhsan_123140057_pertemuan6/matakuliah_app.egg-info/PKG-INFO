@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: matakuliah_app
+Version: 0.0
+Summary: Aplikasi Manajemen Matakuliah dengan Pyramid
+Requires-Dist: pyramid
+Requires-Dist: pyramid_debugtoolbar
+Requires-Dist: waitress
+Requires-Dist: sqlalchemy
+Requires-Dist: psycopg2-binary
+Requires-Dist: alembic
+Requires-Dist: pyramid_tm
+Requires-Dist: zope.sqlalchemy
+Dynamic: requires-dist
+Dynamic: summary

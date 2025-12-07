@@ -1,0 +1,8 @@
+pyramid
+pyramid_debugtoolbar
+waitress
+sqlalchemy
+psycopg2-binary
+alembic
+pyramid_tm
+zope.sqlalchemy
